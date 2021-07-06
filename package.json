@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Avayabhay/ReactCourse#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "create-react-app": "^4.0.3"
   }
 }
