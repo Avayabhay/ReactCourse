@@ -1,0 +1,19 @@
+{
+  "name": "reactcoursera",
+  "version": "1.0.0",
+  "description": "This is the tutorial from Coursera of React",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avayabhay/ReactCourse.git"
+  },
+  "author": "Abhay Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avayabhay/ReactCourse/issues"
+  },
+  "homepage": "https://github.com/Avayabhay/ReactCourse#readme"
+}
