@@ -12,11 +12,14 @@ import {
 class Menu extends Component {
   constructor(props) {
     super(props);
+    console.log("THis is the constructor method");
     this.state = {
       selectedDish: null,
     };
   }
-
+  componentDidMount() {
+    console.log("THis is the ComponentDidMount method");
+  }
   onDishSelect(dish) {
     this.setState({ selectedDish: dish });
   }
@@ -36,6 +39,7 @@ class Menu extends Component {
   }
 
   render() {
+    console.log("THis is the render method");
     const menu = this.props.dishes.map((dish) => {
       return (
         <div key={dish.id} className="col-12 col-md-5 m-1">
