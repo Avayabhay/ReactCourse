@@ -3,13 +3,18 @@ import ReactDom from "react-dom";
 
 function Greeting() {
   return (
-    <React.Fragment>
+    <>
       <div className="row">
-        <h4>THis is my First Component</h4>;
+        <First />
       </div>
-      <div>This is a Second Div</div>
-    </React.Fragment>
+      <Second />
+    </>
   );
 }
+
+const First = () => <h4>THis is my First Component</h4>;
+const Second = () => {
+  return <div>This is a Second Div</div>;
+};
 
 ReactDom.render(<Greeting />, document.getElementById("root"));
