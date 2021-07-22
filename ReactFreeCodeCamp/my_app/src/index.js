@@ -1,24 +1,28 @@
 import React from "react";
 import ReactDom from "react-dom";
+//css
+import "./index.css";
 
 function BookList() {
   return (
-    <section>
+    <>
       <h2>This is a BookList</h2>
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-    </section>
+      <section className="booklist">
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+        <Book />
+      </section>
+    </>
   );
 }
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -38,7 +42,7 @@ const Title = () => (
   </h4>
 );
 const Author = () => {
-  return <h5>Sadhguru </h5>;
+  return <h5 style={{ color: "#543" }}>Sadhguru </h5>;
 };
 
 // const First = () => <h4>THis is my First Component</h4>;

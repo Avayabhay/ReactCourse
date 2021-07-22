@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: antiquewhite;
+  color: #458;
+}
+
+.booklist {
+  width: 90vw;
+  /* max-width: 1170px; */
+  margin: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+.book {
+  background-color: #eaeff4;
+  padding: 15px;
+  border-radius: 5px;
+  border: #458 solid;
+}
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
