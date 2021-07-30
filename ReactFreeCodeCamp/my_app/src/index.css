@@ -25,6 +25,11 @@ body {
   border-radius: 5px;
   border: #458 solid;
 }
+.book h5 {
+  color: tomato;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
