@@ -30,20 +30,17 @@ function BookList() {
           author={secondBook.author}
           title={secondBook.title}
         />
-        <Book />
-        <Book />
       </section>
     </>
   );
 }
 
-const Book = (props) => {
-  console.log(props);
+const Book = ({ img, title, author }) => {
   return (
     <article className="book">
-      <img src={props.img} alt="" />
-      <h4>{props.title}</h4>
-      <h5> {props.author} </h5>
+      <img src={img} alt="" />
+      <h4>{title}</h4>
+      <h5> {author} </h5>
       {/* <h2>{props.job}</h2> */}
     </article>
   );
