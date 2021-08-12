@@ -6,12 +6,16 @@ const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    console.log("UO");
+    console.log("INSIde USEeFfect");
     if (value >= 1) {
       document.title = `New Message(${value})`;
     }
-  });
-  console.log("ABHAY");
+  }, [value]);
+
+  useEffect(() => {
+    console.log("Another UseEffect");
+  }, []);
+  console.log("RENDERING AGAIN");
   return (
     <>
       <h1>{value}</h1>
