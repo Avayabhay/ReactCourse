@@ -1,7 +1,7 @@
 import React from "react";
 // import Setup from "./tutorial/1-useState/setup/5-useState-counter";
 // import UseEffect from "./tutorial/2-useEffect/setup/3-useEffect-fetch-data";
-import ConditionalRendering from "./tutorial/3-conditional-rendering/setup/2-short-circuit";
+import ConditionalRendering from "./tutorial/3-conditional-rendering/setup/3-show-hide";
 
 function App() {
   return (
