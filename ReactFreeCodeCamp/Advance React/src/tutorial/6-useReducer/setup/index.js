@@ -3,11 +3,29 @@ import Modal from "./Modal";
 import { data } from "../../../data";
 // reducer function
 
-const reducer = (state, action) => {};
+const reducer = (state, action) => {
+  if (action.type === "ADD_ITEM") {
+    const newPeople = [...state.people, action.payload];
+    return {
+      ...state,
+      people: newPeople,
+      isModal: true,
+      modalContent: "ITEM ADDED",
+    };
+  }
+  if (action.type === "NO_VALUE") {
+    return {
+      ...state,
+      isModal: true,
+      modalContent: "Please Enter the NAME",
+    };
+  }
+  throw new Error("No Matching action Type");
+};
 const defaultState = {
-  people: data,
-  isModal: true,
-  modalContent: "Hello World",
+  people: [],
+  isModal: false,
+  modalContent: "",
 };
 
 const Index = () => {
@@ -18,7 +36,11 @@ const Index = () => {
     e.preventDefault();
     console.log("ADDED");
     if (name) {
+      const newItem = { id: new Date().getTime().toString(), name };
+      dispatch({ type: "ADD_ITEM", payload: newItem });
+      setName("");
     } else {
+      dispatch({ type: "NO_VALUE" });
     }
   };
   return (
