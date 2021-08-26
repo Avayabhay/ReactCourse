@@ -4,12 +4,13 @@ import React from "react";
 // import ConditionalRendering from "./tutorial/3-conditional-rendering/setup/3-show-hide";
 // import Forms from "./tutorial/4-forms/setup/2-multiple-inputs";
 // import UseRef from "./tutorial/5-useRef/setup/1-useRef-basics";
-import UseReducer from "./tutorial/6-useReducer/setup";
+// import UseReducer from "./tutorial/6-useReducer/setup";
+import PropD from "./tutorial/7-prop-drilling/setup/1-prop-drilling";
 
 function App() {
   return (
     <div className="container">
-      <UseReducer />
+      <PropD />
     </div>
   );
 }
