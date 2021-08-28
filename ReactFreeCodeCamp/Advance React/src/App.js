@@ -5,12 +5,13 @@ import React from "react";
 // import Forms from "./tutorial/4-forms/setup/2-multiple-inputs";
 // import UseRef from "./tutorial/5-useRef/setup/1-useRef-basics";
 // import UseReducer from "./tutorial/6-useReducer/setup";
-import PropD from "./tutorial/7-prop-drilling/setup/1-prop-drilling";
+// import PropD from "./tutorial/7-prop-drilling/setup/1-prop-drilling";
+import UseContext from "./tutorial/8-useContext/setup/1-context-api";
 
 function App() {
   return (
     <div className="container">
-      <PropD />
+      <UseContext />
     </div>
   );
 }
