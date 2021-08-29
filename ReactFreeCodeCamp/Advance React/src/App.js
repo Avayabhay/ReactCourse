@@ -6,12 +6,13 @@ import React from "react";
 // import UseRef from "./tutorial/5-useRef/setup/1-useRef-basics";
 // import UseReducer from "./tutorial/6-useReducer/setup";
 // import PropD from "./tutorial/7-prop-drilling/setup/1-prop-drilling";
-import UseContext from "./tutorial/8-useContext/setup/1-context-api";
+// import UseContext from "./tutorial/8-useContext/setup/1-context-api";
+import CustomHook from "./tutorial/9-custom-hooks/setup/1-fetch-example";
 
 function App() {
   return (
     <div className="container">
-      <UseContext />
+      <CustomHook />
     </div>
   );
 }
