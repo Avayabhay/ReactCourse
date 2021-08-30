@@ -7,12 +7,13 @@ import React from "react";
 // import UseReducer from "./tutorial/6-useReducer/setup";
 // import PropD from "./tutorial/7-prop-drilling/setup/1-prop-drilling";
 // import UseContext from "./tutorial/8-useContext/setup/1-context-api";
-import CustomHook from "./tutorial/9-custom-hooks/setup/1-fetch-example";
+// import CustomHook from "./tutorial/9-custom-hooks/setup/1-fetch-example";
+import Setup from "./tutorial/10-prop-types/setup";
 
 function App() {
   return (
     <div className="container">
-      <CustomHook />
+      <Setup />
     </div>
   );
 }
