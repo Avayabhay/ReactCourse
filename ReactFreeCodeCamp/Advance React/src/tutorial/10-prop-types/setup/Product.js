@@ -5,7 +5,7 @@ const Product = ({ name, price, image }) => {
     <article className="product">
       <img src={image.url} alt="" />
       <h4>{name}</h4>
-      <h4>{price}</h4>
+      <h4>${price}</h4>
     </article>
   );
 };
