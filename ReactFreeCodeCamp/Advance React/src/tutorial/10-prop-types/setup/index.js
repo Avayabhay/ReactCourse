@@ -22,16 +22,4 @@ const Index = () => {
   );
 };
 
-Product.propTypes = {
-  image: PropTypes.object.isRequired,
-  name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-};
-
-Product.defaultProps = {
-  name: "default-Name",
-  image: defaultImage,
-  price: 9.99,
-};
-
 export default Index;
