@@ -31,7 +31,7 @@ Product.propTypes = {
 Product.defaultProps = {
   name: "default-Name",
   image: defaultImage,
-  price: "9.99",
+  price: 9.99,
 };
 
 export default Index;
