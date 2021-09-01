@@ -1,10 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { data } from '../../../data';
-import { Link, useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { data } from "../../../data";
+import { Link, useParams } from "react-router-dom";
 const Person = () => {
+  const { id } = useParams();
+  const [name, setName] = useState("Default Name");
+  console.log(useParams());
+  // console.log(newPerson );
+  useEffect(() => {
+    const newPerson = data.find((person) => person.id === parseInt(id));
+    setName(newPerson.name);
+  }, []);
+
   return (
     <div>
-      <h2>person</h2>
+      <h1>{name}</h1>
+      <Link className="btn" to="/people">
+        Back to People
+      </Link>
     </div>
   );
 };
